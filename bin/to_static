@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+require('node-jsx').install({harmony: true});
+
 var React = require('react');
 var Page = React.createFactory(require('../webapp/client/components/page'));
 var State = require('../webapp/client/state');

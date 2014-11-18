@@ -5,17 +5,16 @@ module.exports = React.createClass({
   displayName: 'Page',
 
   render: function() {
-    return React.DOM.html(null,
-      React.DOM.head(null,
-        React.DOM.script({type: 'text/javascript', src: 'build/bundle.js'}),
-        React.DOM.script({type: 'text/javascript'}, 'start();')
-      ),
-      React.DOM.body(null,
-        'Hello world, this is ' + this.props.state.get('foo'),
-        ' ',
-        React.DOM.button({onClick: this.handleChangeFoo}, 'Change this text!')
-      )
-    );
+    return <html>
+      <head>
+        <script type="text/javascript" src="build/bundle.js" />
+        <script type="text/javascript">start()</script>
+      </head>
+      <body>
+        Hello world, this is {this.props.state.get('foo')}{' '}
+        <button onClick={this.handleChangeFoo}>Change this text!</button>
+      </body>
+    </html>;
   },
 
   handleChangeFoo: function(ev) {

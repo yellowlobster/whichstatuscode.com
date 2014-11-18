@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var React = require('react');
-var Page = React.createFactory(require('../webapp/client/page'));
+var Page = React.createFactory(require('../webapp/client/components/page'));
 var State = require('../webapp/client/state');
 var fs = require('fs');
 

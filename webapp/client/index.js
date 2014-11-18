@@ -1,11 +1,9 @@
 var State = require('./state');
 var render = require('./render');
-var update = require('./render');
-var Dispatcher = require('flux').Dispatcher;
+var update = require('./update');
+var dispatcher = require('./dispatcher');
 
 module.exports = window.start = function start() {
-  var dispatcher = new Dispatcher();
-
   var state = State.initial();
   render(state);
 

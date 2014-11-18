@@ -16,3 +16,5 @@ bower_components
 webapp/public
 *.sublime-project
 *.sublime-workspace
+build
+index.html

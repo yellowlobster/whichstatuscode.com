@@ -8,4 +8,4 @@ var State = require('../webapp/client/state');
 var fs = require('fs');
 
 var string = React.renderToString(Page({state: State.initial()}));
-fs.writeFileSync(__dirname + '/../index.html', '<!DOCTYPE html>' + string);
+fs.writeFileSync(__dirname + '/../build/index.html', '<!DOCTYPE html>' + string);

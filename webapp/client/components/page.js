@@ -7,7 +7,7 @@ module.exports = React.createClass({
   render: function() {
     return <html>
       <head>
-        <script type="text/javascript" src="build/bundle.js" />
+        <script type="text/javascript" src="bundle.js" />
         <script type="text/javascript">start()</script>
       </head>
       <body>

@@ -2,7 +2,6 @@ var gulp = require('gulp');
 var gutil = require("gulp-util");
 var run = require('gulp-run');
 var webpack = require('gulp-webpack');
-var git = require('gulp-git');
 var _ = require('lodash');
 
 var webpackOptions = _.merge({}, require('./webpack.config.js'), {

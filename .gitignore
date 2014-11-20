@@ -17,4 +17,3 @@ webapp/public
 *.sublime-project
 *.sublime-workspace
 build
-index.html

@@ -23,5 +23,23 @@ gulp.task('watch', function() {
   }).pipe(gulp.dest('build'));
 });
 
+gulp.task('build', function(callback) {
+  webpack(webpackOptions, null, function(err, stats) {
+    if (!err) {
+      run('bin/to_static').exec(function(err) {
+        callback(err);
+      });
+    } else {
+      callback(err);
+    }
+  }).pipe(gulp.dest('build'));
+});
+
+gulp.task('publish', ['build'], function(callback) {
+  run('bin/publish').exec(function(err) {
+    callback(err);
+  });
+});
+
 
 gulp.task('default', ['watch']);

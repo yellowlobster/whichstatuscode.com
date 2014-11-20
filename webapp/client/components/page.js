@@ -1,5 +1,5 @@
 var React = require('react');
-var input = require('../input');
+var App = require('./app');
 
 module.exports = React.createClass({
   displayName: 'Page',
@@ -12,19 +12,8 @@ module.exports = React.createClass({
         <title>Which status code should I use?</title>
       </head>
       <body>
-        <h1>INDEX PAGE</h1>
-        <p>
-          This is some sample text, this will change when the button is clicked.
-        </p>
-        <p>{this.props.state.get('foo')}</p>
-        <button onClick={this.handleChangeFoo}>Change the text!</button>
+        <App state={this.props.state} />
       </body>
     </html>;
-  },
-
-  handleChangeFoo: function(ev) {
-    ev.preventDefault();
-
-    input.changeFoo();
   }
 });

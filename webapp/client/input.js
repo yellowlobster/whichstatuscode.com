@@ -1,11 +1,17 @@
 var dispatcher = require('./dispatcher');
 
-var i = 1;
 module.exports = {
-  changeFoo: function() {
+  answerYes: function() {
     dispatcher.dispatch({
-      type: 'CHANGE_FOO',
-      foo: 'Foo changed ' + i++ + ' times'
+      type: 'ANSWER',
+      answer: 'yes'
+    });
+  },
+
+  answerNo: function() {
+    dispatcher.dispatch({
+      type: 'ANSWER',
+      answer: 'no'
     });
   }
 }

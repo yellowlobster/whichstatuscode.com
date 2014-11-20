@@ -1,8 +1,8 @@
 module.exports = function(input, state) {
   switch(input.type) {
-    case 'CHANGE_FOO':
-      state = state.set('foo', input.foo);
-      break;
+    case 'ANSWER':
+      return state.update('answersSoFar', function(answersSoFar) {
+        return answersSoFar.push(input.answer)
+      });
   }
-  return state;
 };

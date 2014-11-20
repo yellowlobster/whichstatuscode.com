@@ -14,4 +14,4 @@ module.exports = {
       answer: 'no'
     });
   }
-}
+};

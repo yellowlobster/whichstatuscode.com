@@ -12,7 +12,7 @@ module.exports = {
   },
 
   isQuestion: function(questionOrCode) {
-    return typeof questionOrCode != 'number';
+    return typeof questionOrCode !== 'number';
   },
 
   getStatusCode: function(state, code) {

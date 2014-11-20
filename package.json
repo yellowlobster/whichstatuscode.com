@@ -25,11 +25,27 @@
   "devDependencies": {
     "gulp-run": "~1.6.4",
     "gulp": "^3.8.10",
+    "gulp-jshint": "~1.9.0",
     "webpack": "~1.4.13",
     "gulp-util": "~3.0.1",
     "lodash": "~2.4.1",
     "gulp-webpack": "~1.0.0",
     "node-jsx": "~0.12.0",
     "jsx-loader": "~0.12.1"
+  },
+  "jshintConfig": {
+    "browser": true,
+    "curly": true,
+    "eqeqeq": true,
+    "eqnull": true,
+    "esnext": true,
+    "expr": true,
+    "latedef": true,
+    "onevar": true,
+    "noarg": true,
+    "node": true,
+    "trailing": true,
+    "undef": true,
+    "unused": true
   }
 }

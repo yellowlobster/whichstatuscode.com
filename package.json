@@ -23,15 +23,23 @@
     "flux": "~2.0.1"
   },
   "devDependencies": {
-    "gulp-run": "~1.6.4",
+    "css-loader": "^0.9.0",
+    "file-loader": "^0.8.1",
     "gulp": "^3.8.10",
     "gulp-jshint": "~1.9.0",
     "webpack": "~1.4.13",
+    "gulp-run": "~1.6.4",
     "gulp-util": "~3.0.1",
-    "lodash": "~2.4.1",
     "gulp-webpack": "~1.0.0",
+    "jsx-loader": "~0.12.1",
+    "lodash": "~2.4.1",
+    "nib": "^1.0.4",
     "node-jsx": "~0.12.0",
-    "jsx-loader": "~0.12.1"
+    "jsx-loader": "~0.12.1",
+    "style-loader": "^0.8.2",
+    "stylus": "^0.49.3",
+    "stylus-loader": "^0.4.0",
+    "url-loader": "^0.5.5"
   },
   "jshintConfig": {
     "browser": true,

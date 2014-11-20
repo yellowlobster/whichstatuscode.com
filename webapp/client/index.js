@@ -3,6 +3,8 @@ var render = require('./render');
 var update = require('./update');
 var dispatcher = require('./dispatcher');
 
+var styles = require('../assets/stylesheets/all.styl');
+
 module.exports = window.start = function start() {
   var state = State.initial();
   render(state);

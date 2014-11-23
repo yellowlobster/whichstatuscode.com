@@ -2,6 +2,9 @@
 
 require('node-jsx').install({harmony: true});
 
+ASSETS_MANIFEST = process.env.ASSETS_MANIFEST ?
+  JSON.parse(process.env.ASSETS_MANIFEST) : undefined;
+
 var React = require('react');
 var Page = React.createFactory(require('../webapp/client/components/page'));
 var State = require('../webapp/client/state');

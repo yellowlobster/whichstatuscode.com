@@ -7,8 +7,8 @@ module.exports = React.createClass({
 
   render: function() {
     var currentQuestionOrCode = State.getCurrentQuestionOrCode(this.props.state);
-    return State.isQuestion(currentQuestionOrCode)
-      ? this.renderQuestion(currentQuestionOrCode) : this.renderCode(currentQuestionOrCode);
+    return State.isQuestion(currentQuestionOrCode) ?
+      this.renderQuestion(currentQuestionOrCode) : this.renderCode(currentQuestionOrCode);
   },
 
   renderQuestion: function(question) {

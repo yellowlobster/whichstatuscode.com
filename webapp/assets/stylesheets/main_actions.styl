@@ -1,0 +1,33 @@
+.mainAction
+  position absolute
+  font-size 4.5rem
+  bottom 0
+  padding 0 1rem
+  cursor pointer
+  font-weight 400
+  transition border .5s
+
+  &.negativeAction
+    color color-primary-red
+    border-bottom .3rem solid rgba(color-primary-red, .2)
+    &:hover
+      border-bottom .3rem solid color-primary-red
+
+  &.positiveAction
+    color color-primary-green
+    border-bottom .3rem solid rgba(color-primary-green, .2)
+    &:hover
+      border-bottom .3rem solid color-primary-green
+
+  &.neutralAction
+    color color-primary-gray
+    border-bottom .3rem solid rgba(color-primary-gray, .2)
+    &:hover
+          border-bottom .3rem solid color-primary-gray
+
+
+.mainActions_line
+  @extend .backgroundLine
+  position relative
+  width 100%
+  height .3rem

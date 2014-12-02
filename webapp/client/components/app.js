@@ -51,8 +51,8 @@ module.exports = React.createClass({
   },
 
   handleRestart: function(ev) {
-    // TODO: Refactor this to use a proper router when we add one.
-    window.location = '/';
+    ev.preventDefault();
+    input.restart();
   },
 
   handleYes: function(ev) {

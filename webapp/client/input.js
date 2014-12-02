@@ -13,5 +13,11 @@ module.exports = {
       type: 'ANSWER',
       answer: 'no'
     });
+  },
+
+  restart: function() {
+    dispatcher.dispatch({
+      type: 'RESTART'
+    });
   }
 };

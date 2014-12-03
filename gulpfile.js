@@ -91,9 +91,7 @@ gulp.task('build', ['clean'], function(callback) {
   });
 });
 
-gulp.task('publish', ['build'], function() {
-  return shell('bin/publish');
-});
+gulp.task('publish', ['build'], shell.task('bin/publish'));
 
 gulp.task('lint', function() {
   var jshintConfig = require('./package').jshintConfig;

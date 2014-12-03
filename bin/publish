@@ -12,6 +12,7 @@ fi
 
 git fetch 2> /dev/null
 git checkout gh-pages
+git pull
 mv build/* .
 git add -A
 git commit -m "Site update"

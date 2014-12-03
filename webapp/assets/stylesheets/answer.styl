@@ -1,0 +1,53 @@
+@import "variables"
+
+.answer
+  .answer_textContainer
+    width 90%
+    margin-left 10%
+    margin-top 17.6rem
+    line-height 14rem
+    font-weight 100
+    font-size 11rem
+
+    > ._text_titleContainer
+      position relative
+      font-weight 300
+      color color-primary-blue
+
+      > ._titleContainer_code
+        font-size 11rem
+        display inline
+        border-bottom backgroundLineWidth solid color-primary-blue
+
+      > ._titleContainer_shortDescription
+        margin-left 3rem
+        font-size 7.2rem
+
+      > ._titleContainer_mainHorizontalLine
+        @extend .backgroundLine
+        position absolute
+        width 100%
+        height backgroundLineWidth
+        top 13.6rem
+        z-index zIndex-backgroundLine
+
+    > ._text_description
+      font-size 4.8rem
+      line-height 5rem
+      color color-primary-gray
+      margin-left 22.5rem
+
+    .answer_mainVerticalLine
+      @extend .backgroundLine
+      height 29rem
+      width backgroundLineWidth
+      top 0
+      left 7.3rem
+
+  > .answer_mainActionsContainer
+    margin-top 20rem
+    position relative
+    width 40rem
+
+    .neutralAction
+      right 0

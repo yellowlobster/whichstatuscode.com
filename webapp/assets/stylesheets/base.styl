@@ -1,0 +1,38 @@
+@import "variables"
+
+html
+  box-sizing border-box
+  // Changing to this value so the rems are easier to calculate
+  // 1.4rem = 14px
+  // 2.4rem = 24px
+  font-size 62.5%
+  // height 100%
+  position relative
+  min-height 100%
+
+*, *:before, *:after
+  box-sizing inherit
+
+body
+  font-family 'Lato', 'helvetica'
+  font-size 1.3rem
+  font-weight 100
+  color color-black
+  margin 0
+  padding 0
+
+a
+  text-decoration none
+
+h1
+  margin 0
+  paddin 0
+  font-weight 300
+
+p
+  margin 0
+
+.backgroundLine
+  opacity .4
+  background-color color-primary-gray-light
+  position absolute

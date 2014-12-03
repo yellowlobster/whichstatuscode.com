@@ -1,0 +1,36 @@
+@import "variables"
+
+.question
+
+  .question_text
+    margin-left 12rem
+    margin-top 18rem
+    line-height 14rem
+    font-weight 300
+    font-size 11rem
+
+  > .question_mainVerticalLine
+    @extend .backgroundLine
+    height 29rem
+    width backgroundLineWidth
+    top 0
+    left 7.3rem
+
+  > .question_mainHorizontalLine
+    @extend .backgroundLine
+    height backgroundLineWidth
+    width 50%
+    right 0
+    top 33rem
+
+
+  > .question_mainActionsContainer
+    margin-top 14rem
+    position relative
+    width 40rem
+
+    > .negativeAction
+      right 14rem
+
+    > .positiveAction
+      right 0rem

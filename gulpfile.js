@@ -7,6 +7,7 @@ var jshint = require('gulp-jshint');
 var del = require('del');
 var browserSync = require("browser-sync");
 var through = require('through2');
+var react = require('gulp-react');
 var crypto = require('crypto');
 
 var webpackOptions = _.merge({}, require('./webpack.config.js'), {
@@ -97,6 +98,7 @@ gulp.task('lint', function() {
   var jshintConfig = require('./package').jshintConfig;
   jshintConfig.lookup = false;
   return gulp.src([ __dirname + '/**/*.js', '!./node_modules/**', '!./build/**'])
+             .pipe(react({harmony: true}))
              .pipe(jshint(jshintConfig))
              .pipe(jshint.reporter('default'))
              .pipe(jshint.reporter('fail'));

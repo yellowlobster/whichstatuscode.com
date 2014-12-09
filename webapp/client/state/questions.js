@@ -1,9 +1,3 @@
-// {
-//   1: {question: 'Are you responding successfully?', answers: {yes: {statusCode: 200}, no: {question: 2}}},
-//   2: {question: 'Are you responding from a failure?', answers: {yes: {question: 3}, no: {statusCode: 100}}},
-//   3: {question: 'Is that failure due to a server issue?', answers: {yes: {statusCode: 500}, no: {statusCode: 400}}}
-// };
-
 module.exports = {
   1: {question: 'Did the request end successfully?', answers: {yes: {question: 2}, no: {question: 17}}},
   2: {question: 'Should the user do some kind of redirect?', answers: {yes: {question: 3}, no: {question: 9}}},
